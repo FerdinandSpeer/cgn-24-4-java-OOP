@@ -22,7 +22,7 @@ public class Car {
     }
     //"accelerate"-Methode:
     public void accelerate(){
-        speed  = speed + 120; // Hier reicht "speed" weil "speed" in keiner anderen Methode übergeben werden muss?
+        speed  = speed + 120; // Hier reicht "speed" weil "speed" in keiner anderen Methode übergeben werden muss
         System.out.println("The car is accelerating. Current speed is " + speed + " km/h");
     }
 
