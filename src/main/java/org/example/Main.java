@@ -38,9 +38,9 @@ public class Main {
 
         //PersonChallenge [] challengeTeam = {ricardo, ahmad, stefan, ferdinand};
 
-        Book book1 = new Book("Herr der Ringe","J. R. R. Tolkien", 12341241);
-        Book book2 = new Book("Herr der Quadrate","J. R. R. Tolkien", 123888241);
-        Book book3 = new Book("Herr der Dreiecke","J. R. R. Tolkien", 1266668241);
+        Book book1 = new Book("Herr der Ringe","J. R. R. Tolkien", "12345");
+        Book book2 = new Book("Herr der Quadrate","J. R. R. Tolkien", "12344");
+        Book book3 = new Book("Herr der Dreiecke","J. R. R. Tolkien", "12333");
 
 
         Book [] books = {book1, book2};

@@ -5,12 +5,12 @@ import java.util.Objects;
 public class Book {
     private String title;
     private String author;
-    private int isbn;
+    private String isbn;
 
     //CONSTRUCTOR
 
 
-    public Book(String title, String author, int isbn) {
+    public Book(String title, String author, String isbn) {
         this.title = title;
         this.author = author;
         this.isbn = isbn;
@@ -25,7 +25,7 @@ public class Book {
         return author;
     }
 
-    public int getIsbn() {
+    public String getIsbn() {
         return isbn;
     }
 
@@ -39,7 +39,7 @@ public class Book {
         this.author = author;
     }
 
-    public void setIsbn(int isbn) {
+    public void setIsbn(String isbn) {
         this.isbn = isbn;
     }
 

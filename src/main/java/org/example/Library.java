@@ -39,11 +39,19 @@ public class Library {
     }
 
     public void addBook (Book newbook){
-        Book [] arrayOfNewBooks = new Book[books.length + 1];
+        Book [] arrayWithNewBook = new Book[books.length + 1];
         for (int i=0; i< books.length; i++){
-            arrayOfNewBooks[i]=books[i];
+            arrayWithNewBook[i]=books[i];
         }
-        arrayOfNewBooks[books.length] = newbook;
-        books = arrayOfNewBooks;
+        arrayWithNewBook[books.length] = newbook;
+        books = arrayWithNewBook;
     }
+
+   /** public void deleteBook (String isbn){
+        Book [] arrayWithLessBooks = new Book[books.length - 1];
+        for (int i=0; i< books.length; i++){
+            if (books[i].getIsbn().equals(isbn){
+            }
+        }
+    */
 }
