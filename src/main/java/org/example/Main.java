@@ -26,7 +26,7 @@ public class Main {
         stefan.helloPersonChallenge();
         ferdinand.helloPersonChallenge();
 
-
+        PersonChallenge [] challengeTeam = {ricardo, ahmad, stefan, ferdinand};
         Person [] phonebook = {pommes, rotWeiss};
     }
     public static void addPerson (Person currywurst) {
