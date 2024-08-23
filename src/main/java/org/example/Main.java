@@ -2,9 +2,18 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-
+        // Session vormittag + Nachmittag:
         Person pommes = new Person("Müller", 35,"0123456789", true);
+        Person pommes2 = new Person("Müller", 35,"0123456789", true);
         Person rotWeiss = new Person("MBauer", 20,"0124566789", true);
+
+        Person [] phonebook = {pommes, rotWeiss};
+
+        addPerson(pommes);
+        addPerson(rotWeiss);
+
+        System.out.println("Sind Pommes und Pommes2 gleich? " + pommes.equals(pommes2));
+
 
         //Basic Challenge:
         Car vw = new Car ("VW", "Golf", "black", 2020);
@@ -27,10 +36,14 @@ public class Main {
         ferdinand.helloPersonChallenge();
 
         PersonChallenge [] challengeTeam = {ricardo, ahmad, stefan, ferdinand};
-        Person [] phonebook = {pommes, rotWeiss};
+
     }
     public static void addPerson (Person currywurst) {
-        System.out.println();
+        currywurst.setName("Thomas");
+        System.out.println(currywurst.getName());
+        System.out.println(currywurst.getAge());
+        System.out.println(currywurst.getPhone());
+        System.out.println(currywurst.isAlive());
     }
 
 
