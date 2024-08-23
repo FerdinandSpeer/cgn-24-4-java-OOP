@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         // Session vormittag + Nachmittag:
@@ -7,10 +9,9 @@ public class Main {
         Person pommes2 = new Person("Müller", 35,"0123456789", true);
         Person rotWeiss = new Person("MBauer", 20,"0124566789", true);
 
-        Person [] phonebook = {pommes, rotWeiss};
 
-        addPerson(pommes);
-        addPerson(rotWeiss);
+        //addPerson(pommes);
+        //addPerson(rotWeiss);
 
         System.out.println("Sind Pommes und Pommes2 gleich? " + pommes.equals(pommes2));
 
@@ -35,16 +36,28 @@ public class Main {
         stefan.helloPersonChallenge();
         ferdinand.helloPersonChallenge();
 
-        PersonChallenge [] challengeTeam = {ricardo, ahmad, stefan, ferdinand};
+        //PersonChallenge [] challengeTeam = {ricardo, ahmad, stefan, ferdinand};
 
+        Book book1 = new Book("Herr der Ringe","J. R. R. Tolkien", 12341241);
+        Book book2 = new Book("Herr der Quadrate","J. R. R. Tolkien", 123888241);
+        Book book3 = new Book("Herr der Dreiecke","J. R. R. Tolkien", 1266668241);
+
+
+        Book [] books = {book1, book2};
+
+        Library library = new Library(books);
+
+        System.out.println(library);
+        library.addBook(book3);
+        System.out.println(library);
     }
-    public static void addPerson (Person currywurst) {
-        currywurst.setName("Thomas");
-        System.out.println(currywurst.getName());
-        System.out.println(currywurst.getAge());
-        System.out.println(currywurst.getPhone());
-        System.out.println(currywurst.isAlive());
-    }
+    //public static void addPerson (Person currywurst) {
+        //currywurst.setName("Thomas");
+        //System.out.println(currywurst.getName());
+        //System.out.println(currywurst.getAge());
+        //System.out.println(currywurst.getPhone());
+        //System.out.println(currywurst.isAlive());
+ //   }
 
 
 }
